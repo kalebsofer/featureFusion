@@ -1,0 +1,23 @@
+import re
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+class TextProcessor:
+    def __init__(self):
+        pass
+
+    def clean_text(self, text):
+        return text
+
+    def tokenize(self, text):
+        return text.split()
+
+    def remove_stopwords(self, tokens):
+        return [word for word in tokens if word not in self.stop_words]
+
+    def lemmatize_tokens(self, tokens):
+        return [self.lemmatizer.lemmatize(token) for token in tokens]
+
+    def process(self, text):
+        return
